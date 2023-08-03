@@ -9,11 +9,11 @@ section .text
 global _start
 
 _start:
-    mov esi, 7
-    add esi, 7
-    cmp esi, 14
-    je _Equal
-    jmp _NotEqual
+    mov esi, 7          ; set esi register as 7
+    add esi, 7          ; add 7 to the esi register
+    cmp esi, 15         ; compare esi register to number 14
+    je _Equal           ; if esi register is 14 run _Equal
+    jmp _NotEqual       ; if esi register is not 14 run _NotEqual
 
 _Equal:
     mov rax, 1                                                 
